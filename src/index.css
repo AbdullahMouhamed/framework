@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+  display: none !important;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navContent {
+  align-items: center;
+}
+
+input::placeholder {
+  color: rgb(95, 94, 94);
+  font-size: large;
+}
+input {
+  outline: none;
+}
+.btn {
+  background-color: #1abc9c;
+  width: 130px;
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+}
+.up {
+  top: 0 !important;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: block !important;
+    align-self: flex-start;
+  }
+
+  ul {
+    display: none;
+  }
+
+  ul.open {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .navContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

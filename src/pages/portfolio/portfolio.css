@@ -1,0 +1,30 @@
+.portfolioCards div .layer {
+  position: absolute;
+  inset: 0;
+  background-color: #1abc9c;
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.portfolioCards div {
+  cursor: pointer;
+}
+.portfolioCards div:hover .layer {
+  opacity: 0.9;
+}
+.portfolioCards div:hover i {
+  opacity: 1;
+}
+
+.display {
+  position: fixed;
+  background-color: rgba(96, 96, 229, 0.361);
+  inset: 0;
+  z-index: 5;
+}
+.displayPic {
+  opacity: 1;
+}
+
+.photoOff {
+  display: none !important;
+}
